@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1C90B8227F64697008E336A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C90B8127F64697008E336A /* AppDelegate.swift */; };
+		A1C90B8427F64697008E336A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C90B8327F64697008E336A /* SceneDelegate.swift */; };
+		A1C90B8927F64697008E336A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C90B8727F64697008E336A /* Main.storyboard */; };
+		A1C90B8B27F64698008E336A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C90B8A27F64698008E336A /* Assets.xcassets */; };
+		A1C90B8E27F64698008E336A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C90B8C27F64698008E336A /* LaunchScreen.storyboard */; };
+		A1C90B9A27F668D8008E336A /* BillSplitting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C90B9927F668D8008E336A /* BillSplitting.swift */; };
+		A1C90B9E27F66A62008E336A /* BillSplittingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C90B9D27F66A62008E336A /* BillSplittingController.swift */; };
+		A1C90BA027F66A8E008E336A /* BillCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C90B9F27F66A8E008E336A /* BillCalculatorViewController.swift */; };
+		A1C90BA227F66A9B008E336A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C90BA127F66A9B008E336A /* ResultViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1C90B7E27F64697008E336A /* Bill Splitting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bill Splitting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C90B8127F64697008E336A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1C90B8327F64697008E336A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A1C90B8827F64697008E336A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1C90B8A27F64698008E336A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1C90B8D27F64698008E336A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1C90B8F27F64698008E336A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C90B9927F668D8008E336A /* BillSplitting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillSplitting.swift; sourceTree = "<group>"; };
+		A1C90B9D27F66A62008E336A /* BillSplittingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillSplittingController.swift; sourceTree = "<group>"; };
+		A1C90B9F27F66A8E008E336A /* BillCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCalculatorViewController.swift; sourceTree = "<group>"; };
+		A1C90BA127F66A9B008E336A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1C90B7B27F64697008E336A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1C90B7527F64697008E336A = {
+			isa = PBXGroup;
+			children = (
+				A1C90B8027F64697008E336A /* Bill Splitting */,
+				A1C90B7F27F64697008E336A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1C90B7F27F64697008E336A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1C90B7E27F64697008E336A /* Bill Splitting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1C90B8027F64697008E336A /* Bill Splitting */ = {
+			isa = PBXGroup;
+			children = (
+				A1C90B9827F647EC008E336A /* Models */,
+				A1C90B9727F647E5008E336A /* Views */,
+				A1C90B9627F647D8008E336A /* Controllers */,
+				A1C90B9527F646A6008E336A /* Resources */,
+			);
+			path = "Bill Splitting";
+			sourceTree = "<group>";
+		};
+		A1C90B9527F646A6008E336A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1C90B8127F64697008E336A /* AppDelegate.swift */,
+				A1C90B8327F64697008E336A /* SceneDelegate.swift */,
+				A1C90B8A27F64698008E336A /* Assets.xcassets */,
+				A1C90B8F27F64698008E336A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1C90B9627F647D8008E336A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1C90B9C27F66A3C008E336A /* Model Controllers */,
+				A1C90B9B27F66A2C008E336A /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A1C90B9727F647E5008E336A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1C90B8727F64697008E336A /* Main.storyboard */,
+				A1C90B8C27F64698008E336A /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A1C90B9827F647EC008E336A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1C90B9927F668D8008E336A /* BillSplitting.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1C90B9B27F66A2C008E336A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1C90B9F27F66A8E008E336A /* BillCalculatorViewController.swift */,
+				A1C90BA127F66A9B008E336A /* ResultViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A1C90B9C27F66A3C008E336A /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1C90B9D27F66A62008E336A /* BillSplittingController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1C90B7D27F64697008E336A /* Bill Splitting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C90B9227F64698008E336A /* Build configuration list for PBXNativeTarget "Bill Splitting" */;
+			buildPhases = (
+				A1C90B7A27F64697008E336A /* Sources */,
+				A1C90B7B27F64697008E336A /* Frameworks */,
+				A1C90B7C27F64697008E336A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bill Splitting";
+			productName = "Bill Splitting";
+			productReference = A1C90B7E27F64697008E336A /* Bill Splitting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1C90B7627F64697008E336A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A1C90B7D27F64697008E336A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A1C90B7927F64697008E336A /* Build configuration list for PBXProject "Bill Splitting" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1C90B7527F64697008E336A;
+			productRefGroup = A1C90B7F27F64697008E336A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1C90B7D27F64697008E336A /* Bill Splitting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1C90B7C27F64697008E336A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C90B8E27F64698008E336A /* LaunchScreen.storyboard in Resources */,
+				A1C90B8B27F64698008E336A /* Assets.xcassets in Resources */,
+				A1C90B8927F64697008E336A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1C90B7A27F64697008E336A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C90BA027F66A8E008E336A /* BillCalculatorViewController.swift in Sources */,
+				A1C90B9E27F66A62008E336A /* BillSplittingController.swift in Sources */,
+				A1C90B8227F64697008E336A /* AppDelegate.swift in Sources */,
+				A1C90B8427F64697008E336A /* SceneDelegate.swift in Sources */,
+				A1C90B9A27F668D8008E336A /* BillSplitting.swift in Sources */,
+				A1C90BA227F66A9B008E336A /* ResultViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1C90B8727F64697008E336A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C90B8827F64697008E336A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1C90B8C27F64698008E336A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C90B8D27F64698008E336A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1C90B9027F64698008E336A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1C90B9127F64698008E336A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1C90B9327F64698008E336A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6J26NUH9GZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bill Splitting/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tranglam.Bill-Splitting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1C90B9427F64698008E336A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6J26NUH9GZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bill Splitting/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tranglam.Bill-Splitting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1C90B7927F64697008E336A /* Build configuration list for PBXProject "Bill Splitting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C90B9027F64698008E336A /* Debug */,
+				A1C90B9127F64698008E336A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C90B9227F64698008E336A /* Build configuration list for PBXNativeTarget "Bill Splitting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C90B9327F64698008E336A /* Debug */,
+				A1C90B9427F64698008E336A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1C90B7627F64697008E336A /* Project object */;
+}

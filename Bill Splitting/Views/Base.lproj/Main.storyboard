@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bill Calculator View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BillCalculatorViewController" customModule="Bill_Splitting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bpL-Th-QOf" userLabel="Bill total Stack View">
+                                <rect key="frame" x="41.5" y="56" width="331" height="115"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Bill Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jum-cA-elA">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemBlueColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. 123.45" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Gf-LC-ln6">
+                                        <rect key="frame" x="0.0" y="65" width="331" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="WNB-3N-s1A"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lfW-uz-koN" userLabel="Calculator Stack View">
+                                <rect key="frame" x="41.5" y="187.5" width="331" height="214"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G54-yA-098" userLabel="Select tip">
+                                        <rect key="frame" x="110" y="0.0" width="111" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemBlueColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Obb-ib-Bwc" userLabel="Buttons Stack View">
+                                        <rect key="frame" x="0.0" y="49" width="331" height="48"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRy-Lh-bxc">
+                                                <rect key="frame" x="0.0" y="0.0" width="97" height="48"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="0%">
+                                                    <color key="titleColor" red="0.0063333339059999999" green="0.54955589770000002" blue="0.22368210550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tipBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mOB-Zu-3f7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTL-rw-a8A">
+                                                <rect key="frame" x="117" y="0.0" width="97" height="48"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="10%">
+                                                    <color key="titleColor" red="0.0063333339059999999" green="0.54955589770000002" blue="0.22368210550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tipBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6cm-4N-C4m"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8l-Ix-weR">
+                                                <rect key="frame" x="234" y="0.0" width="97" height="48"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="20%">
+                                                    <color key="titleColor" red="0.0063333339059999999" green="0.54955589770000002" blue="0.22368210550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tipBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4EX-5E-zbR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose split" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05d-mQ-S7B" userLabel="Choose Split">
+                                        <rect key="frame" x="96" y="117" width="139.5" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemBlueColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RQM-31-R2e" userLabel="Split Stack View">
+                                        <rect key="frame" x="66" y="166" width="199" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utz-mV-XlV" userLabel="Num of people">
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="2" maximumValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="GIG-hF-0h3">
+                                                <rect key="frame" x="105" y="8" width="94" height="32"/>
+                                                <connections>
+                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="LNa-8Z-fEw"/>
+                                                </connections>
+                                            </stepper>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RQM-31-R2e" firstAttribute="width" secondItem="lfW-uz-koN" secondAttribute="width" multiplier="0.6" id="Ca5-ji-Ezc"/>
+                                    <constraint firstItem="Obb-ib-Bwc" firstAttribute="width" secondItem="lfW-uz-koN" secondAttribute="width" id="rZV-Wo-r23"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="512" placeholderIntrinsicHeight="512" image="1f4b2" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tb0-tb-lVr">
+                                <rect key="frame" x="62" y="439.5" width="290" height="268.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOt-v8-upY">
+                                <rect key="frame" x="103.5" y="784.5" width="207" height="42"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="tintColor" red="0.99755865335464478" green="0.99755865335464478" blue="0.99755853414535522" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calculate" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="calculatedPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QEX-hJ-4an"/>
+                                    <segue destination="XNv-0j-7V8" kind="presentation" identifier="showResult" id="vqF-l5-LCX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.77248162031173706" green="0.94300782680511475" blue="0.86433357000350952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bpL-Th-QOf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BrH-NP-irC"/>
+                            <constraint firstItem="VOt-v8-upY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="T16-zW-VUD"/>
+                            <constraint firstItem="tb0-tb-lVr" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="Uqj-eg-doJ"/>
+                            <constraint firstItem="VOt-v8-upY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="16:9" id="Vaa-hR-OpU"/>
+                            <constraint firstItem="lfW-uz-koN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.65" id="Wu4-gn-Nxh"/>
+                            <constraint firstItem="tb0-tb-lVr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cyH-DR-aV4"/>
+                            <constraint firstItem="VOt-v8-upY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="faU-Em-xrr"/>
+                            <constraint firstItem="bpL-Th-QOf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="hwy-QS-udl"/>
+                            <constraint firstItem="tb0-tb-lVr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="n4Y-E1-6R0"/>
+                            <constraint firstItem="tb0-tb-lVr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="3.8:3" id="pqn-1L-1pe"/>
+                            <constraint firstItem="lfW-uz-koN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uSX-1n-FSj"/>
+                            <constraint firstItem="bpL-Th-QOf" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.25" id="uvg-rJ-Do7"/>
+                            <constraint firstItem="lfW-uz-koN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="yDV-wK-T9y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="billTotalField" destination="7Gf-LC-ln6" id="mbd-ol-2fO"/>
+                        <outlet property="calculateLabel" destination="VOt-v8-upY" id="68n-3f-LtX"/>
+                        <outlet property="peopleLabel" destination="Utz-mV-XlV" id="vZ0-Ex-gN0"/>
+                        <outlet property="tenLabel" destination="qTL-rw-a8A" id="NiY-YK-fzq"/>
+                        <outlet property="twentyLabel" destination="Q8l-Ix-weR" id="2Ls-PU-oOl"/>
+                        <outlet property="zeroLabel" destination="pRy-Lh-bxc" id="DFQ-4n-fcA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="109.82142857142857"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="uZo-HU-b25">
+            <objects>
+                <viewController id="XNv-0j-7V8" customClass="ResultViewController" customModule="Bill_Splitting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZIe-WK-v1z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total per person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gu3-vP-Uow">
+                                <rect key="frame" x="98" y="103" width="218" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" red="0.093446247279644012" green="0.5188249945640564" blue="0.11445624381303787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeE-QW-lzo">
+                                <rect key="frame" x="20.5" y="159" width="373" height="101.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="85"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2u-FU-wJ9">
+                                <rect key="frame" x="103.5" y="695" width="207" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" red="0.99755865335464478" green="0.99755865335464478" blue="0.99755853414535522" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Recalculate">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="recalculatePressed:" destination="XNv-0j-7V8" eventType="touchUpInside" id="gYZ-ny-7Jr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split between 2 people, with 10% tip" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47C-wv-jiG">
+                                <rect key="frame" x="62" y="300.5" width="290" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.093446247279644012" green="0.5188249945640564" blue="0.11445624381303787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lIy-4O-eHG"/>
+                        <color key="backgroundColor" red="0.77097648379999995" green="0.94217187170000005" blue="0.86270952219999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LeE-QW-lzo" firstAttribute="top" secondItem="gu3-vP-Uow" secondAttribute="bottom" constant="20" id="1cQ-pa-zyJ"/>
+                            <constraint firstItem="e2u-FU-wJ9" firstAttribute="centerY" secondItem="lIy-4O-eHG" secondAttribute="centerY" multiplier="5.5:3.1" id="3jq-du-AV6"/>
+                            <constraint firstItem="47C-wv-jiG" firstAttribute="width" secondItem="ZIe-WK-v1z" secondAttribute="width" multiplier="0.7" id="DJ5-fH-imR"/>
+                            <constraint firstItem="LeE-QW-lzo" firstAttribute="centerX" secondItem="ZIe-WK-v1z" secondAttribute="centerX" id="DsP-sW-5pQ"/>
+                            <constraint firstItem="47C-wv-jiG" firstAttribute="centerX" secondItem="ZIe-WK-v1z" secondAttribute="centerX" id="Y3M-3w-sQC"/>
+                            <constraint firstItem="47C-wv-jiG" firstAttribute="top" secondItem="LeE-QW-lzo" secondAttribute="bottom" constant="40" id="Y9t-Ci-Siw"/>
+                            <constraint firstItem="e2u-FU-wJ9" firstAttribute="width" secondItem="ZIe-WK-v1z" secondAttribute="width" multiplier="0.5" id="daD-oD-pxY"/>
+                            <constraint firstItem="e2u-FU-wJ9" firstAttribute="centerX" secondItem="ZIe-WK-v1z" secondAttribute="centerX" id="iLc-IL-hk0"/>
+                            <constraint firstItem="LeE-QW-lzo" firstAttribute="width" secondItem="ZIe-WK-v1z" secondAttribute="width" multiplier="0.9" id="pSn-RE-yRy"/>
+                            <constraint firstItem="gu3-vP-Uow" firstAttribute="centerY" secondItem="lIy-4O-eHG" secondAttribute="centerY" multiplier="0.3" id="pwz-2g-Fbc"/>
+                            <constraint firstItem="gu3-vP-Uow" firstAttribute="centerX" secondItem="ZIe-WK-v1z" secondAttribute="centerX" id="svj-9j-Xgm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AWP-ca-0LG"/>
+                    <connections>
+                        <outlet property="detailLabel" destination="47C-wv-jiG" id="BvF-fo-tzm"/>
+                        <outlet property="resultLabel" destination="LeE-QW-lzo" id="HtX-uR-ZG9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="InL-em-sTY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="110"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1f4b2" width="512" height="512"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
